@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter" sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+}
+
+.container-child {
+  height: 160vh;
+  width: 25%;
+  background-color: rgba(47, 125, 82, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 4rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.dashboard-btn {
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+li > a:link,
+a:visited {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+tbody {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+}
+
+.btn-red {
+  background-color: rgba(255, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 8px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.btn-green {
+  background-color: rgba(47, 125, 82, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 8px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.btn-purple {
+  background-color: rgba(119, 128, 137, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 9px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+/* Target screen sizes up to 1024px */
+@media (max-width: 1024px) {
+  .container-child {
+    width: 35%;
+  }
+  .dashboard-btn {
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .header {
+    font-size: 28px;
+  }
+}
+
+/* Target screen sizes up to 767px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container-child {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  .dashboard-btn {
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .header {
+    font-size: 24px;
+  }
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* Target screen sizes up to 479px */
+@media (max-width: 479px) {
+  .container-child {
+    padding: 0.5rem;
+  }
+  .dashboard-btn {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+  th,
+  td {
+    padding: 6px;
+  }
+  ul {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Approvals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./admin.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-child">
+        <h2>Custom Dining</h2>
+
+        <ul>
+          <li>
+            <a href="/" id="dashboard"
+              ><button class="dashboard-btn">Dashboard</button></a
+            >
+          </li>
+          <li>
+            <a href="restaurant-approvals.html" id="restaurant-approvals-link"
+              >Restaurant Approvals</a
+            >
+          </li>
+          <li>
+            <a href="meal-approvals.html" id="meal-approvals">Meal Approvals</a>
+          </li>
+          <li><a href="#" id="order-monitoring">Order Monitoring</a></li>
+          <li><a href="#" id="earning">Earning & Comission</a></li>
+          <li><a href="#" id="Reviews">Reviews</a></li>
+          <li><a href="#" id="support-request">Support Request</a></li>
+          <li><a href="#" id="Settings">Settings</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="main-content" style="width: 75%; padding: 20px">
+        <div id="restaurant-approvals-table">
+          <div class="flex-item">
+            <h2 class="header">Restaurant-Approvals</h2>
+
+            <form>
+              <input type="text" name="search" placeholder="Search.." />
+            </form>
+          </div>
+          <table class="table">
+            <!-- <thead>
+              <tr>
+                <th>Restaurant</th>
+                <th>City</th>
+                <th>Cuisine</th>
+                <th>Documents</th>
+                <th>Date Applied</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Dammys Kitchen</td>
+                <td>Lagos</td>
+                <td>Healthy local meals</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>1/06/2025</td>
+                <td><button class="btn-green">Approved</button></td>
+              </tr>
+
+              <tr>
+                <td>Palm Foods</td>
+                <td>Asaba</td>
+                <td>Vegan</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>5/06/2025</td>
+                <td><button class="btn-red">Declined</button></td>
+              </tr>
+
+              <tr>
+                <td>So Fresh</td>
+                <td>Port Harcourt</td>
+                <td>Low Carb</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>8/06/2025</td>
+                <td><button class="btn-green">Approved</button></td>
+              </tr>
+
+              <tr>
+                <td>Marys Chills</td>
+                <td>Abuja</td>
+                <td>Vegan</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>8/06/2025</td>
+                <td><button class="btn-green">Approved</button></td>
+              </tr>
+
+              <tr>
+                <td>Ziya Lagos</td>
+                <td>Lagos</td>
+                <td>Vegan</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>9/06/2025</td>
+                <td><button class="btn-purple">Pending</button></td>
+              </tr>
+
+              <tr>
+                <td>Jaffas Inn</td>
+                <td>Kano</td>
+                <td>Low Carbs</td>
+                <td>
+                  1 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>10/06/2025</td>
+                <td><button class="btn-red">Declined</button></td>
+              </tr>
+
+              <tr>
+                <td>Healthy Bar</td>
+                <td>Benin</td>
+                <td>Low Carb</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>13/06/2025</td>
+                <td><button class="btn-purple">Pending</button></td>
+              </tr>
+
+              <tr>
+                <td>GT Food Plus</td>
+                <td>Benin</td>
+                <td>Healthy local meals</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>14/06/2025</td>
+                <td><button class="btn-green">Approved</button></td>
+              </tr>
+
+              <tr>
+                <td>Tummy Delight</td>
+                <td>Lagos</td>
+                <td>Vegan</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>18/06/2025</td>
+                <td><button class="btn-red">Declined</button></td>
+              </tr>
+
+              <tr>
+                <td>Go Green</td>
+                <td>Port Harcourt</td>
+                <td>Vegan</td>
+                <td>
+                  2 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>20/06/2025</td>
+                <td><button class="btn-green">Approved</button></td>
+              </tr>
+
+              <tr>
+                <td>Frontline resturant</td>
+                <td>Owerri</td>
+                <td>Healthy local meals</td>
+                <td>
+                  1 Attachments
+                  <img
+                    src="image.png"
+                    alt="Attachments"
+                    width="11"
+                    height="22"
+                  />
+                </td>
+                <td>20/06/2025</td>
+                <td><button class="btn-red">Declined</button></td>
+              </tr>
+            </tbody> -->
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+        <script src="./admin.js"></script>
+
+       <!-- <script src="./fetch.js"></script> -->
+        <!-- <script src="./admin.js"></script> -->
+  </body>
+</html>
